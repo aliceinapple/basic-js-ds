@@ -16,6 +16,8 @@ class BinarySearchTree {
   }
 
   add(data) {
+    this._root = addWithin(this._root, data);
+    
     function addWithin(node, data) {
       if (!node) {
         return new Node(data);
